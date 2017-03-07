@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+{%  block  'content' %}
+    <div class="row">
+            <section class="article-list container col s10 m12 l12 ">
+                <section class="col s12 m9 l8 article-list-left">
+                    <ul>
+                        {% for article in article_list %}
+                        <li>
+                            <header>
+                                <h1><a href="/article/list/{{ article.id }}">{{ article.title }}</a>
+                                </h1>
+                                <div class="article-meta">
+
+                                    <i class="fa fa-calendar" aria-hidden="true"> {{ article.date_publish }}</i>
+
+                                    <i class="fa fa-folder" aria-hidden="true"><a href="{{ article.category.url }}"> {{ article.category }}</a></i>
+                                    <i class="fa fa-tag" aria-hidden="true">{{ article.tag_set.all }} </i>
+                                </div>
+                            </header>
+
+                             <div class="article-entry">
+                                <div id="content{{ article.id }}" name="article">
+                                    <textarea class="hide">{{ article.abstract }}</textarea>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+                <section class="col s12 m3 l4 article-list-right">
+                    <div class="auto-me">
+
+                        <div class="me-avatar">
+                            <img src="/static/img/avatar.png">
+                        </div>
+                        <div class="me-name">
+                            <h3>普拉多VX</h3>
+                        </div>
+                        <div class="me-declaration">记录下IT人生,知识沉淀的地方！<br> Welcome to My Blog!!</div>
+                        <div class="me-icon">
+                            <a href="https://github.com/anshengme">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://blog.ansheng.me/rss.xml">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="https://blog.ansheng.me/rss.xml">
+                                <i class="fa fa-qq" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="category-list">
+                        <h3>分类列表</h3>
+                        <ul>
+
+                            <li>
+                                <a href="/category/Tornado" class="category-name">Tornado</a>
+                                <span class="category-count">4</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/JavaScript" class="category-name">JavaScript</a>
+                                <span class="category-count">4</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/Django" class="category-name">Django</a>
+                                <span class="category-count">11</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/HTML" class="category-name">HTML</a>
+                                <span class="category-count">3</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/CSS" class="category-name">CSS</a>
+                                <span class="category-count">1</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/Nginx" class="category-name">Nginx</a>
+                                <span class="category-count">1</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/MySQL" class="category-name">MySQL</a>
+                                <span class="category-count">14</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/Python" class="category-name">Python</a>
+                                <span class="category-count">75</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/Linux" class="category-name">Linux</a>
+                                <span class="category-count">16</span>
+                            </li>
+
+                            <li>
+                                <a href="/category/July" class="category-name">July</a>
+                                <span class="category-count">6</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="last-article">
+                        <h3> 近期文章</h3>
+                        <ul>
+                            <li><a href="https://www.unixhot.com">Python全栈之路系列之面向对象运算符重载</a></li>
+
+                            <li><a href="http://www.deeplearn.me">Python全栈之路系列之面向对象运算符重载</a></li>
+
+                            <li><a href="https://www.lmintlcx.com">Python进阶强化训练之类与对象深度技术进阶</a></li>
+
+                            <li><a href="https://www.liuliya.com">Python进阶强化训练之类与对象深度技术进阶</a></li>
+
+                            <li><a href="http://www.ait24.com">使用装饰器自动注册Tornado路由</a></li>
+
+                            <li><a href="http://msits.com">使用装饰器自动注册Tornado路由</a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h3>友情链接</h3>
+                        <ul>
+
+                            <li><a href="https://www.unixhot.com">运维社区</a></li>
+
+                            <li><a href="http://www.deeplearn.me">算法之道</a></li>
+
+                            <li><a href="https://www.lmintlcx.com">lmintlcx</a></li>
+
+                            <li><a href="https://www.liuliya.com">劉立亞</a></li>
+
+                            <li><a href="http://www.ait24.com">学阿里云服务器怎么用</a></li>
+
+                            <li><a href="http://msits.com">村里来的扫地僧</a></li>
+
+                            <li><a href="http://www.abcdocker.com">Abcdocker</a></li>
+
+                            <li><a href="http://lanzhishi.org/">懒执事</a></li>
+
+                            <li><a href="http://www.roddypy.com/">普拉多VX</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h3> 本站信息</h3>
+                        <ul>
+                            <li><span>本站运行:</span><span style="color: red">170</span>天</li>
+                            <li><span>本月更新:</span><span style="color: red">2</span>篇</li>
+                            <li><span>共有文章:</span><span style="color: red">20</span>篇</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="col s12 m12 l12">
+                    <ul class="pagination">
+
+
+                        <li class="active"><a>1</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=2">2</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=3">3</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=4">4</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=5">5</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=6">6</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=7">7</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=8">8</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=9">9</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=10">10</a></li>
+
+
+                        <li class="waves-effect"><a href="#">...</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=13">13</a></li>
+
+                        <li class="waves-effect"><a href="?page=14">14</a></li>
+
+
+                        <li class="waves-effect"><a href="?page=2"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </section>
+            </section>
+    </div>
+    <script src="//cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+    <link rel="stylesheet" href="/static/editor/css/editormd.css">
+    <script src="/static/editor/editormd.js"></script>
+    <script src="/static/editor/lib/prettify.min.js"></script>
+    <script src="/static/editor/lib/raphael.min.js"></script>
+    <script src="/static/editor/lib/underscore.min.js"></script>
+    <script src="/static/editor/lib/sequence-diagram.min.js"></script>
+    <script src="/static/editor/lib/flowchart.min.js"></script>
+    <script src="/static/editor/lib/jquery.flowchart.min.js"></script>
+    <script>
+        $(".button-collapse").sideNav();
+        var archive_list = document.getElementsByName('article');
+        for (var i = 0; i < archive_list.length; i++) {
+            var archive_id = archive_list[i].getAttribute('id');
+            var editor = editormd.markdownToHTML(archive_id, {
+                htmlDecode: "style,script,iframe",
+                emoji: true,
+                taskList: true,
+                tex: true,  // 默认不解析
+                flowChart: true,  // 默认不解析
+                sequenceDiagram: true  // 默认不解析
+            });
+            document.getElementById(archive_id).style.padding = "0px"
+        }
+    </script>
+{% endblock %}

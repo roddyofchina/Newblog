@@ -1,0 +1,261 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+	background: #f4f4f4;
+	-webkit-font-smoothing: antialiased;
+    color: #666;
+	font-family: Roboto,Lato,Microsoft YaHei,sans-serif;
+
+  }
+
+  .container {
+    flex: 1 0 auto;
+  }
+
+
+  .article-list {
+    flex: 1 0 auto;
+}
+
+.article-list-right > div {
+    margin-top: 15px;
+    background: #ffffff;
+    margin-bottom: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 1%;
+}
+
+.auto-me {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.me-avatar {
+    padding-top: 27%;
+}
+
+.me-avatar > img {
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
+
+.me-declaration {
+    margin: auto;
+    padding-left: 5px;
+    line-height: 26px;
+    color: #565a5f;
+}
+
+.me-declaration,
+.me-name {
+    margin-top: 20px;
+}
+
+.me-icon > a {
+    color: #C2C2C2;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+.me-icon > a:hover {
+    color: #00bff3;
+    font-size: 30px;
+}
+
+.links,
+.last-article,
+.category-list {
+    padding: 20px 15px;
+}
+
+.category-list{
+    width: 100%;
+}
+
+.me-name > h3 {
+    font-size: 20px;
+}
+
+.category-list > h3,
+.links > h3 {
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.last-article > h3 {
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.category-list > ul {
+    list-style: none;
+    margin: 0 30px;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 5px;
+    font-size: 16px;
+
+}
+
+.category-name {
+    text-decoration: none;
+    color: black;
+}
+
+.category-name:hover {
+    color: #666;
+}
+
+.category-count {
+    float: right;
+}
+
+
+
+
+.last-article > ul {
+    text-align: left;
+    padding-left: 50px;
+}
+
+
+.last-article > ul > li {
+    margin-top: 10px;
+}
+
+.last-article > ul > li {
+    list-style: disc;
+}
+
+.last-article > ul > li > a {
+    color: #666;
+    text-decoration: none;
+}
+
+.last-article > ul > li > a:hover {
+    color: #00bff3;
+}
+
+
+
+.links > ul {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.category-list > ul > li,
+.links > ul > li {
+    margin-top: 10px;
+}
+
+.links > ul > li {
+    list-style: disc;
+}
+
+.links > ul > li > a {
+    color: #666;
+    text-decoration: none;
+}
+
+.links > ul > li > a:hover {
+    color: #00bff3;
+}
+
+.article-list-left > ul > li {
+    background: #ffffff;
+    padding: 0 18px 10px 18px;
+    list-style: none;
+    border: 1px solid #eeeeee;
+    border-radius: 1%;
+}
+
+.article-list-left > ul > li > header > h1 {
+    font-size: 24px;
+}
+
+.article-list-left > ul > li > header > h1 > a {
+    text-decoration: none;
+    color: #565a5f;
+}
+
+.article-list-left > ul > li > header > h1 > a:hover {
+    color: #38b7ea;
+}
+
+.article-meta {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.article-meta > i {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #565a5f;
+}
+
+.article-meta > i > a {
+    color: #565a5f;
+    text-decoration: none;
+}
+
+.article-list-left > ul > li > footer > p {
+    float: left;
+    font-size: 12px;
+    margin-right: 50px;
+    color: #999;
+    line-height: 7px;
+}
+
+.article-list-left > ul > li {
+    margin-bottom: 25px;
+}
+
+
+
+.article-centent {
+    flex: 1 0 auto;
+    width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.article-centent > article {
+    background: #ffffff;
+    padding: 20px 30px;
+    border: 1px solid #eeeeee;
+}
+
+.article-centent > article > header > h1 {
+    font-size: 1.7em;
+    color: #565a5f;
+    margin-bottom: 20px;
+}
+
+.article-centent > article > header > .article-meta > i,
+
+.article-centent > article > header > .article-meta > span {
+    margin-right: 20px;
+    color: #565a5f;
+    font-size: 0.9em;
+}
+
+.article-centent > article > .article_body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.article-centent > article > .article-copyright {
+    line-height: 30px;
+    border-top: 2px solid #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+.article-meta > i > a {
+	color: #565a5f;
+}
